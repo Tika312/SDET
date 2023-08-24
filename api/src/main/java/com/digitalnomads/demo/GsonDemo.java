@@ -26,6 +26,5 @@ public class GsonDemo {
         Gson gson = new Gson();
         String subaruJSon = gson.toJson(subaru); // Обьект Java превратили в фомат JSon
         System.out.println(subaruJSon);  // Этот процесс называется Serialization (Сериализация)
-
     }
 }
