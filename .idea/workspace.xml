@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e91bfa78-8e57-48ef-b415-0552ec462e34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/GoRestUsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/GoRestUsersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +40,8 @@
     "jdk.selected.JAVA_MODULE": "corretto-17"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.GoRestUsersTest.createANewUser">
-    <configuration name="GoRestUsersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GoRestUsersTest" />
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.digitalnomads.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoRestUsersTest.createANewUser" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Intro.getAllUsers">
+    <configuration name="GoRestUsersTest.changeTheAboveStatusOfUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +51,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
       <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GoRestUsersTest" />
-      <option name="METHOD_NAME" value="createANewUser" />
+      <option name="METHOD_NAME" value="changeTheAboveStatusOfUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -82,7 +59,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GsonDemo.demo1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTest.deleteAboveRegisteredUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +68,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GsonDemo" />
-      <option name="METHOD_NAME" value="demo1" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GoRestUsersTest" />
+      <option name="METHOD_NAME" value="deleteAboveRegisteredUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GsonDemo.javaObjectIntoJSon" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUsersTest.getUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +86,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GsonDemo" />
-      <option name="METHOD_NAME" value="javaObjectIntoJSon" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GoRestUsersTest" />
+      <option name="METHOD_NAME" value="getUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoRestUsersTest.updateAboveRegisteredUsersEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.digitalnomads.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.GoRestUsersTest" />
+      <option name="METHOD_NAME" value="updateAboveRegisteredUsersEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoRestUsersTest.createANewUser" />
-        <item itemvalue="Application.GoRestUsersTest" />
-        <item itemvalue="TestNG.GsonDemo.javaObjectIntoJSon" />
-        <item itemvalue="TestNG.GsonDemo.demo1" />
         <item itemvalue="TestNG.Intro.getAllUsers" />
+        <item itemvalue="TestNG.GoRestUsersTest.getUsers" />
+        <item itemvalue="TestNG.GoRestUsersTest.deleteAboveRegisteredUser" />
+        <item itemvalue="TestNG.GoRestUsersTest.changeTheAboveStatusOfUser" />
+        <item itemvalue="TestNG.GoRestUsersTest.updateAboveRegisteredUsersEmail" />
       </list>
     </recent_temporary>
   </component>
