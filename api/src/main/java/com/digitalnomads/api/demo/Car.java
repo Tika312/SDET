@@ -1,4 +1,4 @@
-package com.digitalnomads.demo;
+package com.digitalnomads.api.demo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

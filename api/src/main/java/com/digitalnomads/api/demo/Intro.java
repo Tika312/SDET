@@ -1,4 +1,4 @@
-package com.digitalnomads.demo;
+package com.digitalnomads.api.demo;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

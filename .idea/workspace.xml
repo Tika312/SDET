@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e91bfa78-8e57-48ef-b415-0552ec462e34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/ApiRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/application/TalentLMSBaseEndPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/entities/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/BaseApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/users/UserGetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/GsonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/GsonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/Intro.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/Intro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/demo/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/GoRestUsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/demo/GoRestUsersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/GsonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/demo/GsonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/Intro.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/demo/Intro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/digitalnomads/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/digitalnomads/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,56 +53,51 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-17"
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Users/user/Documents/SDET/api/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Intro.updateUserDetailsByPutMethod">
-    <configuration name="Intro.createANewUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\SDET\api\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\SDET\api\src\test\java" />
+      <recent name="C:\Users\user\Documents\SDET\api\src\test" />
+      <recent name="C:\Users\user\Documents\SDET\api\src\test\java\com\digitalnomads" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.digitalnomads.api.demo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.UserGetTest.getAllUsersIntoUserClass">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.Main" />
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.digitalnomads.demo.*" />
+          <option name="PATTERN" value="com.digitalnomads.api.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.Intro" />
-      <option name="METHOD_NAME" value="createANewUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Intro.deleteUserById" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGetTest.getAllUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.digitalnomads.demo.*" />
+          <option name="PATTERN" value="apiTests.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.Intro" />
-      <option name="METHOD_NAME" value="deleteUserById" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Intro.getAllUsers" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.digitalnomads.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.Intro" />
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
       <option name="METHOD_NAME" value="getAllUsers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -97,17 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Intro.updateUserDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGetTest.getAllUsersIntoUserClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.digitalnomads.demo.*" />
+          <option name="PATTERN" value="apiTests.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.Intro" />
-      <option name="METHOD_NAME" value="updateUserDetails" />
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
+      <option name="METHOD_NAME" value="getAllUsersIntoUserClass" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,17 +124,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Intro.updateUserDetailsByPutMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGetTest.getUserByEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.digitalnomads.demo.*" />
+          <option name="PATTERN" value="apiTests.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.digitalnomads.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.demo.Intro" />
-      <option name="METHOD_NAME" value="updateUserDetailsByPutMethod" />
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
+      <option name="METHOD_NAME" value="getUserByEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserGetTest.getUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
+      <option name="METHOD_NAME" value="getUsers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Intro.updateUserDetailsByPutMethod" />
-        <item itemvalue="TestNG.Intro.deleteUserById" />
-        <item itemvalue="TestNG.Intro.updateUserDetails" />
-        <item itemvalue="TestNG.Intro.createANewUser" />
-        <item itemvalue="TestNG.Intro.getAllUsers" />
+        <item itemvalue="TestNG.UserGetTest.getAllUsersIntoUserClass" />
+        <item itemvalue="TestNG.UserGetTest.getUserByEmail" />
+        <item itemvalue="TestNG.UserGetTest.getAllUsers" />
+        <item itemvalue="TestNG.UserGetTest.getUsers" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -164,20 +191,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/api/src/main/java/com/digitalnomads/demo/Intro.java</url>
-          <line>117</line>
-          <properties class="com.digitalnomads.demo.Intro" method="deleteUserById">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

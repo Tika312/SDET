@@ -1,4 +1,4 @@
-package com.digitalnomads;
+package com.digitalnomads.api.demo;
 
 public class Main {
 
