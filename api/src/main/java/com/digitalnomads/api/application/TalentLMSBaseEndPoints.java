@@ -8,6 +8,14 @@ public class TalentLMSBaseEndPoints {
     public final static String V1 = "v1";
     public final static String USERS = "users";
     public final static String EMAIL = "email";
+    public final static String IS_USER_ONLINE = "isuseronline";
+    public final static String SIGN_UP = "usersignup";
+    public final static String DELETE_USER = "deleteuser";
+    public final static String COURSES = "courses";
+    public final static String USER_STATUS = "getuserstatusincourse";
+    public final static String CREATE_COURSE = "createcourse";
+    public final static String DELETE_COURSE = "deletecourse";
+    public final static String ADD_USER_TO_COURSE = "addusertocourse";
 
 
 }

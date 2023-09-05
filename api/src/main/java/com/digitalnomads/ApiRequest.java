@@ -6,6 +6,7 @@ import io.restassured.authentication.BasicAuthScheme;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
@@ -15,13 +16,13 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 @Slf4j
-
+@Data
 public abstract class ApiRequest {
 
     protected String url;
     protected RequestSpecification requestSpecification;
     protected String apiKey;
-    protected Response response;
+    public Response response;
 
 
     public ApiRequest(String url, String apiKey) {
@@ -81,6 +82,17 @@ public abstract class ApiRequest {
         this.response = given()
                 .spec(requestSpecification)
                 .body(body)
+                .post(endPoint);
+        logResponse();
+        return this.response;
+    }
+
+    public Response postWithParams(String endPoint, Map<String,String> params){
+        log.info("Performed POST request {}", endPoint);
+        log.info("Body is {}", params);
+        this.response = given()
+                .spec(requestSpecification)
+                .formParams(params)
                 .post(endPoint);
         logResponse();
         return this.response;
