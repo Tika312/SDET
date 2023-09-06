@@ -34,4 +34,8 @@ public class ApiAssert {
         return CourseAssert.assertThat(this.response);
     }
 
+    public GroupAssert assertGroup(){
+        return GroupAssert.assertThat(this.response);
+    }
+
 }

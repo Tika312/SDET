@@ -34,4 +34,19 @@ public class MockData {
     public static String generateDescription(){
         return faker.educator().university();
     }
+
+    public static String generateGroupName(){
+        return faker.book().title();
+    }
+
+    public static String generateGroupDescription(){
+        return faker.book().genre();
+    }
+
+    public static String generateGroupKey(){
+        return faker.number().digits(8);
+    }
+    public static String generateGroupPrice(){
+        return Integer.toString(faker.number().numberBetween(100,500));
+    }
 }
