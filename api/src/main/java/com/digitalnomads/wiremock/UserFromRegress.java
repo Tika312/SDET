@@ -1,6 +1,6 @@
-package com.digitalnomads.api.entities;
+package com.digitalnomads.wiremock;
 
-
+import com.digitalnomads.api.entities.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,17 +14,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class User extends BaseEntity{
-
+public class UserFromRegress extends BaseEntity {
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    String id;
-    @JsonProperty(value = "first_name")
-    String firstName;
-    @JsonProperty(value = "last_name")
-    String lastName;
     String email;
-    String login;
-    String password;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    Course[] courses;
+    String first_name;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    String last_name;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    String login;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    String password;
 }

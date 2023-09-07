@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e91bfa78-8e57-48ef-b415-0552ec462e34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/asserts/GroupAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/GroupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/entities/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/groups/GroupApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/asserts/CategoryAssert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/entities/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/wiremock/UserFromRegress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/wiremock/WireMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/categories/CategoriesApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/e2e/EndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/ApiRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/ApiRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/application/TalentLMSBaseEndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/application/TalentLMSBaseEndPoints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/asserts/ApiAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/asserts/ApiAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/EntityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/MockData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/JacksonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/JacksonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/test/java/apiTests/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/apiTests/users/UserGetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/users/UserGetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +56,9 @@
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_opened_file_path": "C:/Users/tilek/IdeaProjects/SDET/api/src/main/java/com/digitalnomads/api/utils",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -70,18 +78,18 @@
       <recent name="com.digitalnomads.api.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupApiTest.addCourseToGroup">
-    <configuration name="GroupApiTest.addCourseToGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.UserGetTest.createNewUser">
+    <configuration name="EndToEndTest.deleteOrCreateNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.groups.*" />
+          <option name="PATTERN" value="apiTests.e2e.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.groups" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.groups.GroupApiTest" />
-      <option name="METHOD_NAME" value="addCourseToGroup" />
+      <option name="PACKAGE_NAME" value="apiTests.e2e" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.e2e.EndToEndTest" />
+      <option name="METHOD_NAME" value="deleteOrCreateNewUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -89,17 +97,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupApiTest.addUserToGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGetTest.createNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.groups.*" />
+          <option name="PATTERN" value="apiTests.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.groups" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.groups.GroupApiTest" />
-      <option name="METHOD_NAME" value="addUserToGroup" />
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
+      <option name="METHOD_NAME" value="createNewUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,17 +115,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupApiTest.createGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGetTest.getAllUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.groups.*" />
+          <option name="PATTERN" value="apiTests.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.groups" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.groups.GroupApiTest" />
-      <option name="METHOD_NAME" value="createGroup" />
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
+      <option name="METHOD_NAME" value="getAllUsers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,17 +133,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupApiTest.getNumberOfGroups" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGetTest.getListOfCoursesOfUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.groups.*" />
+          <option name="PATTERN" value="apiTests.users.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.groups" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.groups.GroupApiTest" />
-      <option name="METHOD_NAME" value="getNumberOfGroups" />
+      <option name="PACKAGE_NAME" value="apiTests.users" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
+      <option name="METHOD_NAME" value="getListOfCoursesOfUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,17 +151,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupApiTest.removeUserFromGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WireMockTest.testWireMock" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.groups.*" />
+          <option name="PATTERN" value="com.digitalnomads.wiremock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.groups" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.groups.GroupApiTest" />
-      <option name="METHOD_NAME" value="removeUserFromGroup" />
+      <option name="PACKAGE_NAME" value="com.digitalnomads.wiremock" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.wiremock.WireMockTest" />
+      <option name="METHOD_NAME" value="testWireMock" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -163,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupApiTest.addCourseToGroup" />
-        <item itemvalue="TestNG.GroupApiTest.removeUserFromGroup" />
-        <item itemvalue="TestNG.GroupApiTest.addUserToGroup" />
-        <item itemvalue="TestNG.GroupApiTest.createGroup" />
-        <item itemvalue="TestNG.GroupApiTest.getNumberOfGroups" />
+        <item itemvalue="TestNG.UserGetTest.createNewUser" />
+        <item itemvalue="TestNG.WireMockTest.testWireMock" />
+        <item itemvalue="TestNG.EndToEndTest.deleteOrCreateNewUser" />
+        <item itemvalue="TestNG.UserGetTest.getListOfCoursesOfUser" />
+        <item itemvalue="TestNG.UserGetTest.getAllUsers" />
       </list>
     </recent_temporary>
   </component>

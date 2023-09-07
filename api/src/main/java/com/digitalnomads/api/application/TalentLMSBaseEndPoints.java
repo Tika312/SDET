@@ -22,6 +22,7 @@ public class TalentLMSBaseEndPoints {
     public final static String ADD_USER_TO_GROUP = "addusertogroup";
     public final static String REMOVE_USER_FROM_GROUP = "removeuserfromgroup";
     public final static String ADD_COURSE_TO_GROUP = "addcoursetogroup";
+    public final static String CATEGORIES = "categories";
 
 
 }

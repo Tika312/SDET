@@ -38,4 +38,8 @@ public class ApiAssert {
         return GroupAssert.assertThat(this.response);
     }
 
+    public CategoryAssert assertCategory(){
+        return CategoryAssert.assertThat(this.response);
+    }
+
 }

@@ -1,6 +1,5 @@
 package com.digitalnomads.api.entities;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,17 +13,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class User extends BaseEntity{
+public class Category extends BaseEntity{
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     String id;
-    @JsonProperty(value = "first_name")
-    String firstName;
-    @JsonProperty(value = "last_name")
-    String lastName;
-    String email;
-    String login;
-    String password;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    Course[] courses;
+    String name;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    String price;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty(value = "parent_category_id")
+    String parentCategoryId;
 }

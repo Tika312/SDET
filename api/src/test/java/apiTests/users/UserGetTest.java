@@ -2,18 +2,41 @@ package apiTests.users;
 
 import apiTests.BaseApiTest;
 import com.digitalnomads.api.asserts.ApiAssert;
+import com.digitalnomads.api.entities.Course;
 import com.digitalnomads.api.entities.User;
 import com.digitalnomads.api.utils.EntityManager;
+import com.digitalnomads.api.utils.MockData;
+import com.digitalnomads.wiremock.UserFromRegress;
+import com.digitalnomads.wiremock.WireMockTest;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
+import java.awt.image.AreaAveragingScaleFilter;
+import java.util.*;
 
 public class UserGetTest extends BaseApiTest {
 
     @Test
-    public void getAllUsers(){
-        userController.getAllUsers();
+    public void getAllUsers() throws JsonProcessingException {
+//        userController.getAllUsers();
+       String response = userController.checkUsersCourses("21");
+       String json = userController.convertToJSON(response);
+       Course course = userController.converJsonToCourse(json);
+        System.out.println(json);
+
+    }
+    @Test
+    void getListOfCoursesOfUser(){
+       Course[]courses = userController.getUserCourses("21");
+        System.out.println(Arrays.toString(courses));
+        String courseId = courses[0].getId();
+        String courseName = courses[0].getName();
+        System.out.println(courseId);
+        System.out.println(courseName);
+
     }
 
     @Test
@@ -86,4 +109,33 @@ public class UserGetTest extends BaseApiTest {
                     .isEqual(newUser);
         }
     }
+
+    @Test
+    void createNewUser(){
+        WireMockTest wireMockTest = new WireMockTest();
+        wireMockTest.setUpWireMock();
+        wireMockTest.testWireMock();
+        String response =  wireMockTest.response.jsonPath().getString("data");
+        String json1 = userController.convertToJSONNew(response);
+        System.out.println(json1);
+        Gson gson = new Gson();
+        UserFromRegress[]user = gson.fromJson(json1, UserFromRegress[].class);
+        System.out.println(Arrays.toString(user));
+
+        for (int i=0; i < 4; i++){
+            user[i].setLogin(MockData.generateLogin());
+            user[i].setPassword(MockData.generatePassword());
+            user[i].setEmail(MockData.generateEmail());
+            UserFromRegress user1 = userController.createNewUserFromReg(user[i]);
+
+            Assert.assertEquals(user1.getFirst_name(), user[i].getFirst_name());
+            Assert.assertEquals(user1.getLast_name(), user[i].getLast_name());
+            Assert.assertEquals(user1.getLogin(), user[i].getLogin());
+            Assert.assertEquals(user1.getEmail(), user[i].getEmail());
+        }
+
+
+
+    }
+
 }
