@@ -186,4 +186,20 @@ public class UserController extends ApiRequest {
         Gson gson = new Gson();
         return gson.toJson(jsonObjectList);
     }
+
+    public User deleteAllUsers() {
+        User[] allUsers = getAllUsers().as(User[].class);
+
+        for (User user : allUsers) {
+            String userId = user.getId();
+            if (!userId.equals("1")) {
+                log.info("Deleted user id: {}", userId);
+                deleteUser(userId);
+            }
+        }
+        // После удаления всех пользователей, вернуть одного пользователя (возможно, "1")
+        User[] singleUser = getAllUsers().as(User[].class);
+        return singleUser.length > 0 ? singleUser[0] : null;
+    }
+
 }

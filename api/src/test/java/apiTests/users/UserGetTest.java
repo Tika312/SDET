@@ -9,12 +9,11 @@ import com.digitalnomads.api.utils.MockData;
 import com.digitalnomads.wiremock.UserFromRegress;
 import com.digitalnomads.wiremock.WireMockTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.awt.image.AreaAveragingScaleFilter;
+
 import java.util.*;
 
 public class UserGetTest extends BaseApiTest {
@@ -133,9 +132,17 @@ public class UserGetTest extends BaseApiTest {
             Assert.assertEquals(user1.getLogin(), user[i].getLogin());
             Assert.assertEquals(user1.getEmail(), user[i].getEmail());
         }
+    }
 
+    @Test
+    void createOrDelete(){
+        userController.createNewUserOrDelete();
+    }
 
-
+    @Test
+    void deleteAllUsers(){
+        User myUser = userController.deleteAllUsers();
+        System.out.println(myUser.toString());
     }
 
 }
