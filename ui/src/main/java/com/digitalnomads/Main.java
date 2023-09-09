@@ -1,4 +1,4 @@
-package com.digitalnomads;
+package com.digitalnomads.ui;
 
 public class Main {
     public static void main(String[] args) {
