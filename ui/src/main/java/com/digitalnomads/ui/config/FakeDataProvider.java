@@ -1,4 +1,4 @@
-package com.digitalnomads.config;
+package com.digitalnomads.ui.config;
 
 import com.github.javafaker.Faker;
 

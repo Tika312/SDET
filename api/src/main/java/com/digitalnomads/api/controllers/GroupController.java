@@ -1,9 +1,7 @@
 package com.digitalnomads.api.controllers;
 
-import com.beust.ah.A;
 import com.digitalnomads.ApiRequest;
 import com.digitalnomads.api.entities.Group;
-import com.digitalnomads.api.utils.JacksonUtils;
 import com.digitalnomads.api.utils.MockData;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;

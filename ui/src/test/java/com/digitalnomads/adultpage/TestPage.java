@@ -1,4 +1,4 @@
-package com.digitalnomads;
+package com.digitalnomads.adultpage;
 
 import com.codeborne.selenide.Configuration;
 
@@ -10,7 +10,10 @@ import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Instant;
+import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -41,7 +44,7 @@ public class TestPage {
     @Test
     void enterTalentLMS(){
         open("https://tilek.talentlms.com/dashboard");
-        Cookie cookie = new Cookie("PHPSESSID","elb~fh5sllmcdkbp94adf8v7kih180");
+        Cookie cookie = new Cookie("PHPSESSID","//elb~5bjotrbb5p42s3j8tjbqdlp4a2");
         WebDriverRunner.getWebDriver().manage().addCookie(cookie);
         refresh();
         usersButton.click();
@@ -50,7 +53,30 @@ public class TestPage {
         for (SelenideElement element: listOfUsers){
             System.out.println(element.getText());
         }
-
     }
 
+    @Test
+    void updateCookies() {
+        open("https://tilek.talentlms.com/dashboard");
+        Cookie cookie = new Cookie("PHPSESSID","//elb~5bjotrbb5p42s3j8tjbqdlp4a2");
+        WebDriverRunner.getWebDriver().manage().addCookie(cookie);
+        refresh();
+        Set<Cookie> cookies = WebDriverRunner.getWebDriver().manage().getCookies();
+
+// Продлите срок действия куки на 1 час
+        for (Cookie cooki : cookies) {
+            // Установите новое значение срока действия куки
+            Date newExpiry = Date.from(Instant.now().plusSeconds(3600)); // 3600 секунд = 1 час
+            cookie = new Cookie.Builder(cookie.getName(), cookie.getValue())
+                    .domain(cookie.getDomain())
+                    .path(cookie.getPath())
+                    .expiresOn(newExpiry)
+                    .isHttpOnly(cookie.isHttpOnly())
+                    .isSecure(cookie.isSecure())
+                    .build();
+            // Обновите куки в браузере
+            WebDriverRunner.getWebDriver().manage().addCookie(cookie);
+            refresh();
+        }
+    }
 }

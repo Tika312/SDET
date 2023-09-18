@@ -4,10 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91bfa78-8e57-48ef-b415-0552ec462e34" name="Changes" comment="">
+    <list default="true" id="e91bfa78-8e57-48ef-b415-0552ec462e34" name="Changes" comment="deleteAllUsers method added in usercontroller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/GroupController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/JacksonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/utils/JacksonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/wiremock/UserFromRegress.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/wiremock/UserFromRegress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/wiremock/WireMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/digitalnomads/api/wiremock/WireMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/apiTests/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/apiTests/groups/GroupApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/groups/GroupApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/test/java/apiTests/users/UserGetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/apiTests/users/UserGetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/config/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/config/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/config/FakeDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/config/FakeDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/elementspage/BaseElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/elementspage/BaseElementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/elementspage/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/elementspage/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/AlertHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/AlertHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/DropDownHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/DropDownHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/ElementActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/ElementActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/JavaScriptHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/JavaScriptHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/WebElementActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/WebElementActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/WindowHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/helper/WindowHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/AdultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/AdultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/FoodPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/FoodPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/talentLMS/TalentLMSMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/java/com/digitalnomads/ui/pages/talentLMS/TalentLMSMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/resources/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/resources/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/main/resources/selenide.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/main/resources/selenide.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/adultpage/AdultsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/adultpage/AdultsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/adultpage/TestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/adultpage/TestPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/foodpage/FoodPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/foodpage/FoodPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/talentLMS/TalentLMSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/test/java/com/digitalnomads/talentLMS/TalentLMSTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,23 +67,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/Users/tilek/IdeaProjects/SDET/api/src/main/java/com/digitalnomads/api/utils",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tilek/IdeaProjects/SDET/ui/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tilek\IdeaProjects\SDET\api\src\main\java\com\digitalnomads\api\utils" />
-      <recent name="C:\Users\user\Documents\SDET\api\src\main\resources" />
+      <recent name="C:\Users\tilek\IdeaProjects\SDET\ui\src\test\java" />
+      <recent name="C:\Users\tilek\IdeaProjects\SDET\ui\src\main\java\com\digitalnomads\ui" />
+      <recent name="C:\Users\tilek\IdeaProjects\SDET\ui\src\main\java\com\digitalnomads\ui\drivers" />
+      <recent name="C:\Users\tilek\IdeaProjects\SDET\ui\src\main\java\com\digitalnomads\ui\config" />
+      <recent name="C:\Users\tilek\IdeaProjects\SDET\ui\src\main\java\com\digitalnomads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\SDET\api\src\test\java" />
@@ -60,21 +97,23 @@
       <recent name="com.digitalnomads.api.demo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.digitalnomads" />
+      <recent name="com.digitalnomads.ui.pages" />
       <recent name="com.digitalnomads.api.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UserGetTest.deleteAllUsers">
-    <configuration name="EndToEndTest.deleteOrCreateNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
+  <component name="RunManager" selected="TestNG.TestPage.enterTalentLMS">
+    <configuration name="TalentLMSTest.testMainPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.e2e.*" />
+          <option name="PATTERN" value="com.digitalnomads.talentLMS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.e2e" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.e2e.EndToEndTest" />
-      <option name="METHOD_NAME" value="deleteOrCreateNewUser" />
+      <option name="PACKAGE_NAME" value="com.digitalnomads.talentLMS" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.talentLMS.TalentLMSTest" />
+      <option name="METHOD_NAME" value="testMainPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -82,17 +121,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserGetTest.createNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
+    <configuration name="TestPage.enterTalentLMS" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.users.*" />
+          <option name="PATTERN" value="com.digitalnomads.adultpage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.users" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
-      <option name="METHOD_NAME" value="createNewUser" />
+      <option name="PACKAGE_NAME" value="com.digitalnomads" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.adultpage.TestPage" />
+      <option name="METHOD_NAME" value="enterTalentLMS" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,17 +139,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserGetTest.createOrDelete" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
+    <configuration name="TestPage.enterWithCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.users.*" />
+          <option name="PATTERN" value="com.digitalnomads.adultpage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.users" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
-      <option name="METHOD_NAME" value="createOrDelete" />
+      <option name="PACKAGE_NAME" value="com.digitalnomads" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.adultpage.TestPage" />
+      <option name="METHOD_NAME" value="enterWithCookies" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,17 +157,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserGetTest.deleteAllUsers" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
+    <configuration name="TestPage.enterWithCookiesSelenide" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.users.*" />
+          <option name="PATTERN" value="com.digitalnomads.adultpage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests.users" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.users.UserGetTest" />
-      <option name="METHOD_NAME" value="deleteAllUsers" />
+      <option name="PACKAGE_NAME" value="com.digitalnomads" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.adultpage.TestPage" />
+      <option name="METHOD_NAME" value="enterWithCookiesSelenide" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,17 +175,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WireMockTest.testWireMock" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="api" />
+    <configuration name="TestPage.updateCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.digitalnomads.wiremock.*" />
+          <option name="PATTERN" value="com.digitalnomads.adultpage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.digitalnomads.wiremock" />
-      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.wiremock.WireMockTest" />
-      <option name="METHOD_NAME" value="testWireMock" />
+      <option name="PACKAGE_NAME" value="com.digitalnomads.adultpage" />
+      <option name="MAIN_CLASS_NAME" value="com.digitalnomads.adultpage.TestPage" />
+      <option name="METHOD_NAME" value="updateCookies" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -156,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UserGetTest.deleteAllUsers" />
-        <item itemvalue="TestNG.UserGetTest.createNewUser" />
-        <item itemvalue="TestNG.UserGetTest.createOrDelete" />
-        <item itemvalue="TestNG.WireMockTest.testWireMock" />
-        <item itemvalue="TestNG.EndToEndTest.deleteOrCreateNewUser" />
+        <item itemvalue="TestNG.TestPage.enterTalentLMS" />
+        <item itemvalue="TestNG.TalentLMSTest.testMainPage" />
+        <item itemvalue="TestNG.TestPage.updateCookies" />
+        <item itemvalue="TestNG.TestPage.enterWithCookiesSelenide" />
+        <item itemvalue="TestNG.TestPage.enterWithCookies" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +212,14 @@
       <option name="presentableId" value="Default" />
       <updated>1692875011973</updated>
     </task>
+    <task id="LOCAL-00001" summary="deleteAllUsers method added in usercontroller">
+      <created>1694173591009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694173591009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,5 +232,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="deleteAllUsers method added in usercontroller" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleteAllUsers method added in usercontroller" />
   </component>
 </project>

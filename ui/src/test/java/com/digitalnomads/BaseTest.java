@@ -1,38 +1,49 @@
-package selenium.demo;
+package com.digitalnomads;
 
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
-import user_interface.allure_report_listener.AllureReportListener;
-import user_interface.config.FakeDataProvider;
-import user_interface.helper.ElementActions;
-import user_interface.drivers_factory.MainDriver;
-import user_interface.pages.LoginPage;
-import user_interface.pages.ProfilePage;
 
 
-@Listeners(AllureReportListener.class)
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
+import com.codeborne.selenide.testng.SoftAsserts;
+import com.digitalnomads.ui.config.ConfigReader;
+import com.digitalnomads.ui.config.FakeDataProvider;
+import com.digitalnomads.ui.helper.ElementActions;
+import com.digitalnomads.ui.pages.FoodPage;
+import com.digitalnomads.ui.pages.HomePage;
+import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+
+
+@Listeners({SoftAsserts.class})
 public abstract class BaseTest {
 
-    public WebDriver driver;
     public ElementActions elementActions;
     public FakeDataProvider fakeDataProvider;
-    public LoginPage loginPage;
-    public ProfilePage profilePage;
+    public HomePage homePage;
+    public FoodPage foodPage;
 
-    @BeforeMethod
-    public void setUpBrowser(){
-        driver = MainDriver.getDriver();
-        elementActions = new ElementActions();
-        fakeDataProvider = new FakeDataProvider();
-        loginPage = new LoginPage();
-        profilePage = new ProfilePage();
 
-    }
-    @AfterMethod
-    public void tearDown(){
-       MainDriver.closeDriver();
-    }
+
+        @BeforeClass
+          public void setUpBrowser() {
+            elementActions = new ElementActions();
+            fakeDataProvider = new FakeDataProvider();
+            homePage = new HomePage();
+            foodPage = new FoodPage();
+        }
+
+        @AfterClass
+    public void clearCookiesAndStorage(){
+           if (ConfigReader.CLEAR_COOKIES_AND_STORAGE){
+               JavascriptExecutor js = (JavascriptExecutor) WebDriverRunner.getWebDriver();
+               WebDriverRunner.getWebDriver().manage().deleteAllCookies();
+               js.executeScript("window.sessionStorage.clear()");
+           }
+        }
+
 
 
 }

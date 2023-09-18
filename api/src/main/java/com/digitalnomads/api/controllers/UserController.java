@@ -1,16 +1,13 @@
 package com.digitalnomads.api.controllers;
 
 import com.digitalnomads.ApiRequest;
+import com.digitalnomads.api.entities.User;
+import com.digitalnomads.api.wiremock.UserFromRegress;
 import com.digitalnomads.api.asserts.ApiAssert;
 import com.digitalnomads.api.entities.Course;
-import com.digitalnomads.api.entities.User;
 import com.digitalnomads.api.utils.EntityManager;
 import com.digitalnomads.api.utils.JacksonUtils;
-import com.digitalnomads.wiremock.UserFromRegress;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;

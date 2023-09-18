@@ -3,14 +3,11 @@ package apiTests.groups;
 import apiTests.BaseApiTest;
 import com.digitalnomads.api.asserts.ApiAssert;
 import com.digitalnomads.api.entities.Group;
-import com.digitalnomads.api.utils.EntityManager;
 import com.digitalnomads.api.utils.MockData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 
 public class GroupApiTest extends BaseApiTest {
 

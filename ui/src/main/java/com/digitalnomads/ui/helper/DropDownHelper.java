@@ -1,4 +1,4 @@
-package user_interface.helper;
+package com.digitalnomads.ui.helper;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;

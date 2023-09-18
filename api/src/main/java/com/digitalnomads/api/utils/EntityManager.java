@@ -4,23 +4,21 @@ import com.digitalnomads.api.entities.Course;
 import com.digitalnomads.api.entities.Group;
 import com.digitalnomads.api.entities.User;
 
-import static com.digitalnomads.api.utils.MockData.*;
-
 public class EntityManager {
     public static User generateUser() {
         return User.builder()
-                .firstName(generateName())
-                .lastName(generateLastName())
-                .email(generateEmail())
-                .login(generateLogin())
-                .password(generatePassword())
+                .firstName(MockData.generateName())
+                .lastName(MockData.generateLastName())
+                .email(MockData.generateEmail())
+                .login(MockData.generateLogin())
+                .password(MockData.generatePassword())
                 .build();
     }
 
     public static Course generateCourse(){
         return Course.builder()
-                .name(generateCourseName())
-                .description(generateDescription())
+                .name(MockData.generateCourseName())
+                .description(MockData.generateDescription())
                 .build();
     }
 

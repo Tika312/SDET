@@ -1,16 +1,16 @@
-package user_interface.pages;
+package com.digitalnomads.ui.pages;
 
-import org.openqa.selenium.support.PageFactory;
-import user_interface.drivers_factory.MainDriver;
-import user_interface.helper.ElementActions;
+
+import com.digitalnomads.ui.config.FakeDataProvider;
+import com.digitalnomads.ui.helper.ElementActions;
+
+
 
 public abstract class BasePage {
 
-    public BasePage(){
-        PageFactory.initElements(MainDriver.getDriver(), this);
-    }
 
     public ElementActions elementActions = new ElementActions();
+    public FakeDataProvider faker = new FakeDataProvider();
 
 
 }

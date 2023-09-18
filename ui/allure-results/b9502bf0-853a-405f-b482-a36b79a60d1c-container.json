@@ -1,0 +1,1 @@
+{"uuid":"b9502bf0-853a-405f-b482-a36b79a60d1c","name":"com.digitalnomads.foodpage.FoodPageTest","children":["906372c4-29fb-4d37-b1d3-02a97a5b64a7"],"befores":[{"name":"setUpBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1694344189084,"stop":1694344189250}],"afters":[],"start":1694344189029,"stop":1694344208788}

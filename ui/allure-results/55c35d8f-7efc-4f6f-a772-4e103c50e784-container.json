@@ -1,0 +1,1 @@
+{"uuid":"55c35d8f-7efc-4f6f-a772-4e103c50e784","name":"com.digitalnomads.talentLMS.TalentLMSTest","children":["60636495-9b32-4910-8a78-cbaa85277de2"],"befores":[{"name":"setUpBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1694428686295,"stop":1694428686330}],"afters":[],"start":1694428686218,"stop":1694428699250}

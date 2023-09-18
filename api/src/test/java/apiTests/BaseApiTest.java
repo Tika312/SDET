@@ -4,7 +4,6 @@ import com.digitalnomads.api.controllers.CategoryController;
 import com.digitalnomads.api.controllers.CourseController;
 import com.digitalnomads.api.controllers.GroupController;
 import com.digitalnomads.api.controllers.UserController;
-import com.digitalnomads.api.entities.Category;
 import org.testng.annotations.BeforeSuite;
 
 import static com.digitalnomads.api.application.TalentLMSBaseEndPoints.BASE_URL;

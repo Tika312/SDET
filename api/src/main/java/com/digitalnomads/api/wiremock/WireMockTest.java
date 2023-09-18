@@ -1,4 +1,4 @@
-package com.digitalnomads.wiremock;
+package com.digitalnomads.api.wiremock;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import io.restassured.RestAssured;

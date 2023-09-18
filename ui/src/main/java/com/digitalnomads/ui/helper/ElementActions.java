@@ -1,72 +1,55 @@
-package user_interface.helper;
+package com.digitalnomads.ui.helper;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import user_interface.drivers_factory.MainDriver;
 
-import java.time.Duration;
+
 
 
 public class ElementActions {
 
-    public ElementActions waitButtonToBeClickable(WebElement element){
-        new WebDriverWait(MainDriver.getDriver(), Duration.ofSeconds(15))
-                .until(ExpectedConditions.elementToBeClickable(element));
+
+
+
+    public ElementActions clickTheButton(SelenideElement element){
+        element.shouldHave(Condition.visible).click();
         return this;
     }
 
-    public ElementActions waitWebElementTobeDisplayed(WebElement element){
-        new WebDriverWait(MainDriver.getDriver(), Duration.ofSeconds(15))
-                .until(ExpectedConditions.visibilityOf(element));
+    public ElementActions writeText(SelenideElement element, String txt){
+       element.shouldBe(Condition.visible).sendKeys(txt);
         return this;
     }
 
-    public ElementActions clickTheButton(WebElement element){
-        waitButtonToBeClickable(element);
-        element.click();
-        return this;
-    }
-
-    public ElementActions inputText(WebElement element, String txt){
-       waitWebElementTobeDisplayed(element);
-        element.sendKeys(txt);
-        return this;
-    }
-
-    public ElementActions scrollDownToClick(WebElement element){
-        waitWebElementTobeDisplayed(element);
-       WebElementActions.scrollToElement(MainDriver.getDriver(),element);
-       element.click();
+    public ElementActions scrollDownToClick(SelenideElement element){
+        element.shouldBe(Condition.visible).scrollTo().click();
        return this;
     }
 
-    public ElementActions clickAndFillUpAndTab(WebElement element, String text){
-        clickTheButton(element);
-        element.sendKeys(text);
+    public ElementActions clickAndFillUpAndTab(SelenideElement element, String text){
+        element.shouldBe(Condition.visible).sendKeys(text);
         element.sendKeys(Keys.TAB);
         return this;
     }
-    public ElementActions scrollDown(WebElement element){
-        waitWebElementTobeDisplayed(element);
-        WebElementActions.scrollToElement(MainDriver.getDriver(),element);
+    public ElementActions scrollDown(SelenideElement element){
+        element.shouldBe(Condition.visible).scrollTo();
         return this;
     }
 
-    public ElementActions clearAllEnterNewText(WebElement element, String txt) throws InterruptedException {
-        waitWebElementTobeDisplayed(element);
+    public ElementActions clearAllEnterNewText(SelenideElement element, String txt) throws InterruptedException {
+        element.shouldBe(Condition.visible);
         element.sendKeys(Keys.chord(Keys.CONTROL, "a"));
         element.sendKeys(txt);
-        Thread.sleep(2000);
         element.sendKeys(Keys.ESCAPE);
         return this;
     }
 
-    public ElementActions attachFile(WebElement element, String path){
+    public ElementActions attachFile(SelenideElement element, String path){
         String filePath = path;
+        element.shouldHave(Condition.visible);
         element.sendKeys(filePath);
         return this;
     }
@@ -74,6 +57,11 @@ public class ElementActions {
     public ElementActions scrollDownToBottomPage(WebDriver driver){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        return this;
+    }
+
+    public ElementActions moveToElement(SelenideElement element){
+        element.shouldBe(Condition.visible).hover();
         return this;
     }
 

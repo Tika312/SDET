@@ -2,7 +2,6 @@ package com.digitalnomads.api.controllers;
 
 import com.digitalnomads.ApiRequest;
 import com.digitalnomads.api.entities.Category;
-import com.digitalnomads.api.entities.Course;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 

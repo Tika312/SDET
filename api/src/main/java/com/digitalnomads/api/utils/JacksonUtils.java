@@ -1,6 +1,5 @@
 package com.digitalnomads.api.utils;
 
-import com.digitalnomads.api.entities.BaseEntity;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
